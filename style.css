@@ -1,0 +1,52 @@
+body{
+ background-color: #091461;
+ overflow-x: hidden;
+}
+ 
+.godzilla {
+    width: 160px;
+    height: 80px; 
+    position: absolute;
+    bottom: 0;   
+    background-image: url(godzila.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.tank { 
+ position: absolute;
+ width: 120px;
+ height: 80px;
+ bottom: 0;
+background-image: url(PixelArt.png);
+background-size:contain;
+background-repeat: no-repeat;
+}
+
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes sliderigth {
+    from {
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+.background{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    background-image: url(fundo.jpg);
+    background-size:contain;
+    background-repeat: repeat-x;
+    animation: sliderigth 2500s infinite linear;
+}
